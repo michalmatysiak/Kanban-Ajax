@@ -27,10 +27,10 @@ $(function(){
     element: $('#board .column-container')
   };
 
-  $('.create-column')
-  .click(function(){
-    board.createColumn(new Column(prompt('Wpisz nazwę kolumny')));
-  });
+//   $('.create-column')
+//   .click(function(){
+//     board.createColumn(new Column(prompt('Wpisz nazwę kolumny')));
+//   });
 
   // KLASA KANBAN COLUMN
   function Column(name) {
@@ -54,7 +54,7 @@ $(function(){
       });
       columnAddCard.click(function(event) {
         event.preventDefault();
-        self.createCard(new Card(prompt("Wpisz nazwę karty")));
+        self.createCard(new Card(prompt("Enter name card")));
       });
 
       // KONSTRUOWANIE ELEMENTU KOLUMNY
